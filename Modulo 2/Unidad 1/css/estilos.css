@@ -82,3 +82,12 @@ form {
 #margenes {
     margin: 30px 0px;
 }
+.columnas {
+    text-align: justify;
+    column-count: 2;
+    column-gap: 30px;
+    column-rule: 2px solid gray;
+    margin: 50px 0;
+    padding: 0 15px;
+    text-indent: 50px;
+}
