@@ -5,6 +5,7 @@ h1 {
     font-family: 'Raleway', sans-serif;
     text-align: center;
     font-size: 40px;
+    font-style: italic;
     text-shadow: 2px 2px 5px black;
 }
 h2 {
@@ -77,10 +78,12 @@ form {
 .pdp p {
     color: gray;
     font-weight: bold;
-    font-style: oblique;
+    font-style: italic;
 }
 #margenes {
     margin: 30px 0px;
+    text-shadow: none;
+    font-size: 25px;
 }
 .columnas {
     column-count: 2;
