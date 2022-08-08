@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ejemplos de Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/estilos.css"/>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col centrado">
+                <h1 class="titulo">Algunos ejemplos básicos del uso de Bootstrap</h1>
+                <img src="images/bslogo.png" alt="Bootstrap Logo"/>
+            </div>
+        </div>
+    </div>
+    <hr/>
+
+    <!-- Barra de Navegación -->
+    <h1 class="titulo">Ejemplo de Barra de Navegación</h1>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Autos Deportivos de Lujo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Autos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Concesionarios</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Marcas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Lamborghini</a></li>
+                  <li><a class="dropdown-item" href="#">Ferrari</a></li>
+                  <li><a class="dropdown-item" href="#">McLaren</a></li>
+                  <li><a class="dropdown-item" href="#">Porsche</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <hr/>
+
+    <!-- Carousel -->
+    <h1 class="titulo">Ejemplo de Carousel (4 imágenes con título)</h1>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/aventador.jpg" class="d-block w-100" alt="Lamborghini Aventador"/>
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Lamborghini Aventador</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/sp48unica.jpg" class="d-block w-100" alt="Ferrari SP48 Unica"/>
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Ferrari SP48 Unica</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/p1gtr.jpg" class="d-block w-100" alt="McLaren P1 GTR"/>
+                <div class="carousel-caption d-none d-md-block">
+                <h5>McLaren P1 GTR</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/918spyder.jpg" class="d-block w-100" alt="Porsche 918 Spyder"/>
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Porsche 918 Spyder</h5>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    <hr/>
+
+    <!-- Tarjetas -->
+    <div class="container-fluid fondo">
+        <h1 class="titulo">Ejemplo de Tarjetas (4 tarjetas flexibles)</h1>
+        <div class="row">
+            <div class="col">
+                <div class="card-group">
+                    <div class="card">
+                      <img src="images/aventador.jpg" class="card-img-top" alt="Lamborghini Aventador"/>
+                      <div class="card-body">
+                        <h5 class="card-title">Lamborghini</h5>
+                        <p class="card-text">Lamborghini Aventador</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="images/sp48unica.jpg" class="card-img-top" alt="Ferrari SP48 Unica"/>
+                      <div class="card-body">
+                        <h5 class="card-title">Ferrari</h5>
+                        <p class="card-text">Ferrari SP48 Unica</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="images/p1gtr.jpg" class="card-img-top" alt="McLaren P1 GTR"/>
+                      <div class="card-body">
+                        <h5 class="card-title">McLaren</h5>
+                        <p class="card-text">McLaren P1 GTR</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/918spyder.jpg" class="card-img-top" alt="Porsche 918 Spyder"/>
+                        <div class="card-body">
+                          <h5 class="card-title">Porsche</h5>
+                          <p class="card-text">Porsche 918 Spyder</p>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    
+    <!-- Acordeón -->
+    <h1 class="titulo">Ejemplo de Acordeón (4 elementos colapsados por defecto)</h1>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Lamborghini
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Automobili Lamborghini S.p.A., comúnmente conocido como Lamborghini, es un fabricante italiano de automóviles superdeportivos fundado en 1963 por el fabricante de tractores Ferruccio Lamborghini, con sede y oficinas en Sant'Agata Bolognese y que actualmente forma parte del Grupo Volkswagen.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Ferrari
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Ferrari es un fabricante de automóviles superdeportivos con sede en Maranello, provincia de Módena, en la región de Emilia-Romaña, Italia.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              McLaren
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                McLaren Automotive, abreviado simplemente como McLaren, es un fabricante británico de automóviles deportivos. Fue fundado en 1985 como desprendimiento de la escudería de automovilismo creada en 1963 por Bruce McLaren, con la que comparte tecnología. Su primer modelo producido fue el McLaren F1 lanzado en 1992.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Porsche
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Dr. Ing. h.c. F. Porsche Aktiengesellschaft, normalmente abreviado como Porsche AG, ​ es un fabricante de automóviles alemán especializado en automóviles deportivos de lujo de alta gama, vehículo utilitarios deportivos y sedanes. 
+              </div>
+            </div>
+        </div>
+    </div>
+    <hr/>
+
+    <!-- Cuadro de Diálogo Emergente -->
+    <h1 class="titulo">Ejemplo de Cuadro de Diálogo Emergente (Modal)</h1>
+    <div class="centrado">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Demostración
+        </button>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cuadro de Diálogo Emergente</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Este cuadro se usa comúnmente para mensajes de alerta, notificaciones, comprobación de una acción, etc.
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <hr/>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
+</body>
+</html>
