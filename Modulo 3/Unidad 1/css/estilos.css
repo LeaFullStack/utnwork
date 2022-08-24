@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.banner {
+    display: flex;
+}
+.animacion {
+    width: 100%;
+    animation-name: animacion;
+    animation-duration: 3s;
+}
+@keyframes animacion {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+h1 {
+    font-family: 'Noto Serif HK', serif;
+    font-style: italic;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    margin: 0 0 5px;
+}
+.navegacion {
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+}
+.navegacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+}
+.navegacion ul li {
+    width: 120px;
+    text-align: center;
+}
+.navegacion ul li.activo {
+    padding: 10px 0;
+    background-color: turquoise;
+    color: black;
+    font-weight: bold;
+}
+ .navegacion ul li a {
+    padding: 10px 0;
+    color: black;
+    text-decoration: none;
+    display: block;
+    transition: all 0.5s ease;
+}
+.navegacion ul li a:hover {
+    background-color: turquoise;
+    color: black;
+    font-weight: bold;
+}
+.pdp {
+    color: white;
+    background-color: black;
+    display: flex;
+    padding: 25px 0;
+}
+.pdp .izq {
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.pdp .centro {
+    width: 70%;
+    color: gray;
+    font-weight: bold;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 3px solid gray;
+    border-right: 3px solid gray;
+}
+.pdp .der {
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+}
+.cuerpo {
+    padding: 30px;
+}
+h2 {
+    font-family: 'Noto Serif HK', serif;
+    color: aqua;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    margin-top: 0;
+}
+main p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+/* Pagina Inicio */
+
+.inicio {
+    display: flex;
+    max-width: 1024px;
+    justify-content: space-between;
+    margin: auto;
+}
+.inicio a {
+    text-decoration: none;
+}
+.inicio .elemento {
+    width: 300px;
+    background-color: gray;
+    box-sizing: border-box;
+    border: 3px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    padding: 3px;
+    transition: all 0.5s ease;
+}
+.inicio .elemento img {
+    width: 100%;
+    border-radius: 5px;
+}
+.inicio .elemento p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.inicio .elemento:hover {
+    border: 3px solid aqua;
+    box-shadow: 0 10px 10px black;
+}
+
+/* Paginas HTML5 CSS3 Javascript */
+.logo {
+    text-align: center;
+}
+.logo img {
+    border-radius: 10px;
+    border: 3px solid aqua;
+    box-shadow: 0 10px 10px black;
+    margin-bottom: 20px;
+}
