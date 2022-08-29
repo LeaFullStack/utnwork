@@ -1,8 +1,10 @@
 var i;
 var mayor=0;
-const arreglo=[100,500,750,700,300];
-const cantidad=5;
+var arreglo=[0];
+var cantidad;
+cantidad=parseInt(prompt(`Ingrese la cantidad de números a comparar`,``));
 for (i=0;i<cantidad;i++) {
+    arreglo[i]=parseInt(prompt(`Ingrese el número ${i+1} de ${cantidad}`,``));
     if (arreglo[i]>mayor) {
         mayor=arreglo[i];
     }
