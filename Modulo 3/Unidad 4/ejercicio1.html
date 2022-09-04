@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Javascript - Ejercicio 1</title>
+    <style>
+        #c1 {
+            background-color: red;
+        }
+        #c2 {
+            background-color: green;
+        }
+        #c3 {
+            background-color: blue;
+        }
+        #c4 {
+            background-color: white;
+        }
+        .item {
+            width: 100px;
+            height: 100px;
+            font-size: 17px;
+            font-weight: bold;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid black;
+            margin: 10px;
+            transition: all 0.5s ease;
+            cursor: pointer;
+        }
+        .item:hover {
+            border-radius: 15px;
+            color: aqua;
+            border: 3px solid aqua;
+            box-shadow: 0 5px 10px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="item" id="c1">Fondo Rojo</div>
+    <div class="item" id="c2">Fondo Verde</div>
+    <div class="item" id="c3">Fondo Azul</div>
+    <div class="item" id="c4">Reset</div>
+    <script>
+        const fondo=document.querySelector('body');
+        c1.addEventListener('click', function() {
+            fondo.style.backgroundColor='red';
+        })
+        c2.addEventListener('click', function() {
+            fondo.style.backgroundColor='green';
+        })
+        c3.addEventListener('click', function() {
+            fondo.style.backgroundColor='blue';
+        })
+        c4.addEventListener('click', function() {
+            fondo.style.backgroundColor='';
+        })
+    </script>
+</body>
+</html>

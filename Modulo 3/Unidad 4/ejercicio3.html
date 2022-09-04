@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Javascript - Ejercicio 3</title>
+    <style>
+        body {
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+        h1 {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alumnos Aprobados</h1>
+    <script>
+        const alumnos=[{nombre:'Juan Gomez',nota:7},{nombre:'Pedro Rodriguez',nota:4},{nombre:'Roxana García',nota:8},{nombre:'Luciano Lopez',nota:5},{nombre:'Fernanda Gimenez',nota:6},{nombre:'Florencia Martinez',nota:10},{nombre:'Raul Sanchez',nota:7},{nombre:'Sandra Figueroa',nota:8}];
+        const aprobados=alumnos.filter(function(alum) {
+            if (alum.nota>=7) {
+                return alum;
+            }
+        })
+        for (let i=0;i<aprobados.length;i++) {
+            document.write(`Alumno: <u>${aprobados[i].nombre}</u><br/>Nota: ${aprobados[i].nota}<br/><br/>`);
+        }
+    </script>
+</body>
+</html>
