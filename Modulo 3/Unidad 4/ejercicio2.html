@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Javascript - Ejercicio 2</title>
+    <style>
+        .contenedor {
+            text-align: center;
+            display: inline-block;
+            margin-left: 30px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        textarea {
+            background-color: #ddd;
+            resize: none;
+            border: 2px solid black;
+            border-radius: 15px;
+            width: 200px;
+            height: 100px;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        #cantidad {
+            margin-left: 30px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <p>Mensaje</p>
+        <textarea onkeyup="contador(this);"></textarea>
+    </div>
+    <p id="cantidad">Cantidad de caracteres: 0</p>
+    <script>
+        function contador(area){
+            document.getElementById("cantidad").innerHTML='Cantidad de caracteres: '+ area.value.length;
+        }
+    </script>
+</body>
+</html>
