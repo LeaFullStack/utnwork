@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.cuerpo {
+  padding: 30px;
+}
+h2 {
+  font-family: 'Noto Serif HK', serif;
+  color: aqua;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 2px 2px 5px black;
+  margin-top: 0;
+}
+main p {
+  font-size: 14px;
+  text-align: justify;
+}

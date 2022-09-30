@@ -1,0 +1,30 @@
+.pdp {
+    color: white;
+    background-color: black;
+    display: flex;
+    padding: 25px 0;
+}
+.pdp .izq {
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.pdp .centro {
+    width: 70%;
+    color: gray;
+    font-weight: bold;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 3px solid gray;
+    border-right: 3px solid gray;
+}
+.pdp .der {
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+}
