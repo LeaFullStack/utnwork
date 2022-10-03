@@ -7,7 +7,7 @@ const Nav=(props)=> {
         <nav>
             <div className="navegacion">
                 <ul>
-                    <li><NavLink to="/" className={({isActive})=>isActive? "activo":undefined}>Inicio</NavLink></li>
+                    <li><NavLink to="/" end className={({isActive})=>isActive? "activo":undefined}>Inicio</NavLink></li>
                     <li><NavLink to="/html" className={({isActive})=>isActive? "activo":undefined}>HTML</NavLink></li>
                     <li><NavLink to="/css" className={({isActive})=>isActive? "activo":undefined}>CSS</NavLink></li>
                     <li><NavLink to="/javascript" className={({isActive})=>isActive? "activo":undefined}>Javascript</NavLink></li>
